@@ -1,7 +1,6 @@
 public class LongestRepetedSubstring {
-	//
   public static String longestCommonPrefixe(String s1, String s2){
-	  String s = "";		
+		String s = "";		
 		int min = Math.min(s1.length(), s2.length());
 		for(int i = 0; i < min; i++){
 			if(s1.charAt(i) != s2.charAt(i)){
