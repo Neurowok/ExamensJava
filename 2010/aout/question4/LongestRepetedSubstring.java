@@ -2,7 +2,6 @@ public class LongestRepetedSubstring {
 	
 	public static String longestCommonPrefixe(String s1, String s2){
 		String s = "";
-		
 		int min = Math.min(s1.length(), s2.length());
 		int i = 0;
 		while(i != min && s1.charAt(i) == s2.charAt(i)){
@@ -27,8 +26,7 @@ public class LongestRepetedSubstring {
 
 	public static void main(String[] args) {
 		String s1 = "aacaagtttacaagc";
-		System.out.println(longestRepetedSubstring(s1)); //Affiche "acaag"
-		
+		System.out.println(longestRepetedSubstring(s1)); //Affiche "acaag"	
 	}
 
 }
