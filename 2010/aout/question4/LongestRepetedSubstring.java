@@ -4,14 +4,11 @@ public class LongestRepetedSubstring {
 		String s = "";
 		
 		int min = Math.min(s1.length(), s2.length());
-		for(int i = 0; i < min; i++){
-			if(s1.charAt(i) != s2.charAt(i)){
-				break;
-			}else{
-				s += s1.charAt(i);
-			}
-		}
-		
+		int i = 0;
+		while(i != min && s1.charAt(i) == s2.charAt(i)){
+			s += s1.charAt(i);
+			i++;
+		}		
 		return s;
 	}
 	
